@@ -2,7 +2,7 @@
   "headline": "三类可视化已在源码和隔离 Web 场景实现；真实模型演示与当前 GUI 安装尚未完成。",
   "availability": "可运行：隔离 Web 夹具场景。待验证：真实模型驱动的完整演示。未安装：用户当前运行的 GUI。",
   "state": "未完成",
-  "pr_url": null,
+  "pr_url": "https://github.com/juexing-bot/deepseek-harness/pull/2",
   "commands": [
     "pnpm run build:artifacts && pnpm run build:check",
     "pnpm exec vitest run packages/experimental/client-ui-lobe-visualization/tests",
