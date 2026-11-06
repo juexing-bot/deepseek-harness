@@ -1,0 +1,7 @@
+.summary { margin-left: 8px; overflow-wrap: anywhere; color: var(--dsw-alias-label-secondary); }
+.card { margin: 8px 0; overflow: hidden; border: 0.5px solid var(--dsw-alias-border-l1); border-radius: var(--dsw-radius-lg); background: var(--dsw-alias-markdown-code-block); color: var(--dsw-alias-label-primary); }
+.toolbar { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; padding: 8px 12px; border-bottom: 0.5px solid var(--dsw-alias-border-l1); }
+.path { flex: 1; min-width: 0; overflow-wrap: anywhere; font: var(--dsw-font-markdown-code-block-small); }
+.source, .output { margin: 0; padding: 12px; max-height: 360px; overflow: auto; white-space: pre-wrap; overflow-wrap: anywhere; font: var(--dsw-font-markdown-code-block-small); }
+.output { border-top: 0.5px solid var(--dsw-alias-border-l1); color: var(--dsw-alias-label-secondary); }
+.frame { display: block; width: 100%; height: 360px; border: 0; background: var(--dsw-alias-bg-base); }

@@ -1,0 +1,40 @@
+- banner:
+  - navigation "Session hierarchy": {{workspace}}
+  - text: Standard mode
+  - button "More actions"
+  - button "Open right sidebar"
+  - tablist:
+    - tab "Chat" [selected]
+    - tab "Trajectory"
+  - button "More conversation views"
+- text: Create a counter artifact and inspect the tool results. {{clock}}
+- button "Copy"
+- status: Completed
+- button "Completed in {{duration}}" [expanded]
+- button "Ran commands, edited files, wrote files" [expanded]
+- button "Bash Check the project"
+- button "Edit notes.txt 1KB":
+  - text: Edit
+  - button "notes.txt"
+  - text: 1KB
+- button "Write counter.html 1KB +1 -0" [expanded]:
+  - text: Write
+  - button "counter.html"
+  - text: 1KB +1 -0
+- text: html
+- button "Wrap lines"
+- button "Copy"
+- text: "counter.html + <!doctype html><html lang=\"en\"><meta charset=\"utf-8\"><title>Counter artifact</title><style>body{font:20px system-ui;padding:24px}button{font:inherit;padding:12px}</style><h1>Counter artifact</h1><button id=\"counter\" onclick=\"this.textContent=Number(this.textContent)+1\">0</button></html>"
+- button "Inspect"
+- paragraph: LOBE_VISUALIZATION_READY
+- button "Copy"
+- button "Good response"
+- button "Bad response"
+- button "Branch into a new conversation"
+- text: {{clock}}
+- textbox "Message or run a task, / commands, @ files or sessions"
+- button "Add files or run commands"
+- 'button "Access mode, current: Workspace Write"': Workspace Write
+- button "Select model, current DeepSeek-V4-Flash": DeepSeek-V4-Flash
+- button "Send message" [disabled]
+- button "1 turns 2 steps"

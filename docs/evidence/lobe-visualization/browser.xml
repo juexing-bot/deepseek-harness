@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites name="vitest tests" tests="6" failures="0" errors="0" time="7.141766166">
+    <testsuite name="apps/web/tests/lobe-visualization.e2e.ts" timestamp="2026-11-06T19:07:44.113Z" hostname="juehangs-MacBook-Air.local" tests="6" failures="0" errors="0" skipped="2" time="7.141766166">
+        <testcase classname="apps/web/tests/lobe-visualization.e2e.ts" name="web e2e: Lobe visualization enabled=false &gt; renders the same recorded scenario in both themes and constrained layout" time="0.258998958">
+        </testcase>
+        <testcase classname="apps/web/tests/lobe-visualization.e2e.ts" name="web e2e: Lobe visualization enabled=false &gt; runs the recorded artifact only on request and can stop its browsing context" time="0">
+            <skipped/>
+        </testcase>
+        <testcase classname="apps/web/tests/lobe-visualization.e2e.ts" name="web e2e: Lobe visualization enabled=false &gt; shows the actual preset declaration and closes with Escape" time="0">
+            <skipped/>
+        </testcase>
+        <testcase classname="apps/web/tests/lobe-visualization.e2e.ts" name="web e2e: Lobe visualization enabled=true &gt; renders the same recorded scenario in both themes and constrained layout" time="0.242595">
+        </testcase>
+        <testcase classname="apps/web/tests/lobe-visualization.e2e.ts" name="web e2e: Lobe visualization enabled=true &gt; runs the recorded artifact only on request and can stop its browsing context" time="0.211053334">
+        </testcase>
+        <testcase classname="apps/web/tests/lobe-visualization.e2e.ts" name="web e2e: Lobe visualization enabled=true &gt; shows the actual preset declaration and closes with Escape" time="0.168802417">
+        </testcase>
+    </testsuite>
+</testsuites>

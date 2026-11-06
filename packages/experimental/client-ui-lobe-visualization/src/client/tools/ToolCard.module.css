@@ -1,0 +1,127 @@
+.card {
+  min-width: 0;
+  margin-block: 4px;
+  border: 0.5px solid var(--dsw-alias-border-l1);
+  border-radius: var(--dsw-radius-lg);
+  background: var(--dsw-alias-markdown-code-block);
+  color: var(--dsw-alias-label-primary);
+  overflow-wrap: anywhere;
+}
+
+.header {
+  display: flex;
+  min-width: 0;
+}
+
+.disclosure {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  min-width: 0;
+  padding: 12px;
+  border: 0;
+  border-radius: inherit;
+  background: inherit;
+  color: inherit;
+  text-align: start;
+  font: inherit;
+  cursor: pointer;
+}
+
+.disclosure:focus-visible {
+  outline: 2px solid var(--dsw-alias-label-secondary);
+  outline-offset: 2px;
+}
+
+.heading {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-width: 0;
+  gap: 4px;
+}
+
+.title {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.summary {
+  color: var(--dsw-alias-label-secondary);
+  font-size: 13px;
+  white-space: pre-wrap;
+}
+
+.status {
+  flex: none;
+  color: var(--dsw-alias-label-secondary);
+  font-size: 12px;
+}
+
+.card[data-stage='error'] .status,
+.card[data-stage='error'] .failure {
+  color: var(--dsw-alias-state-error-primary);
+}
+
+.card[data-stage='success'] .status {
+  color: var(--dsw-alias-state-success-primary);
+}
+
+.chevron {
+  flex: none;
+  color: var(--dsw-alias-label-secondary);
+}
+
+.failure {
+  margin: 0;
+  padding: 0 12px 12px;
+  white-space: pre-wrap;
+  font-size: 13px;
+  color: var(--dsw-alias-label-secondary);
+}
+
+.body {
+  display: grid;
+  gap: 12px;
+  min-width: 0;
+  padding: 12px;
+  border-top: 0.5px solid var(--dsw-alias-border-l1);
+}
+
+.section {
+  min-width: 0;
+}
+
+.label {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--dsw-alias-label-caption);
+  font-size: 12px;
+}
+
+.code {
+  margin: 0;
+  padding: 8px;
+  border-inline-start: 2px solid var(--dsw-alias-border-l2);
+  font: var(--dsw-font-markdown-code-block-small);
+  color: var(--dsw-alias-label-secondary);
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.code[data-diff='old'] {
+  border-inline-start-color: var(--dsw-alias-state-error-primary);
+}
+
+.code[data-diff='new'] {
+  border-inline-start-color: var(--dsw-alias-state-success-primary);
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 4px;
+  padding: 4px 8px 8px;
+}

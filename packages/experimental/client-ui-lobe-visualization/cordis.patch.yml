@@ -1,0 +1,4 @@
+# Opt-in visualization; no shipped profile changes.
+- insert:
+    - id: ui-lobe-visualization
+      name: '@deepseek-ai/dsh-client-ui-lobe-visualization'

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites name="vitest tests" tests="69" failures="0" errors="0" time="16.889514377">
+    <testsuite name="scripts/gen-client-catalog.spec.ts" timestamp="2026-11-06T19:01:30.947Z" hostname="juehangs-MacBook-Air.local" tests="22" failures="0" errors="0" skipped="0" time="14.273345917">
+        <testcase classname="scripts/gen-client-catalog.spec.ts" name="client slot contract validation &gt; accepts a documented slot whose owner props resolve" time="0.0014265">
+        </testcase>
+        <testcase classname="scripts/gen-client-catalog.spec.ts" name="client slot contract validation &gt; rejects a slot with no registrant-facing prose, naming the writing template" time="0.00067025">
+        </testcase>
+        <testcase classname="scripts/gen-client-catalog.spec.ts" name="client slot contract validation &gt; rejects a slot whose kind is not one of the contract literals" time="0.000188375">
+        </testcase>
+        <testcase classname="scripts/gen-client-catalog.spec.ts" name="client slot contract validation &gt; rejects a slot whose scope is not one of the contract literals" time="0.000152667">
+        </testcase>
+        <testcase classname="scripts/gen-client-catalog.spec.ts" name="client slot contract validation &gt; rejects owner props no exported declaration provides" time="0.000173417">
+        </testcase>
+        <testcase classname="scripts/gen-client-catalog.spec.ts" name="client slot contract validation &gt; rejects the same key declared twice, because a merge would hide one contract" time="0.000157458">
+        </testcase>
+        <testcase classname="scripts/gen-client-catalog.spec.ts" name="client slot contract validation &gt; rejects a registration into an undeclared slot as a scan blind spot" time="0.00013925">
+        </testcase>
+        <testcase classname="scripts/gen-client-catalog.spec.ts" name="client slot contract validation &gt; rejects a children declaration for a slot no merge types" time="0.000115416">
+        </testcase>
+        <testcase classname="scripts/gen-client-catalog.spec.ts" name="client slot projection &gt; warns that a single seat with a shipped occupant is replaced, not shared" time="0.000541541">
+        </testcase>
+        <testcase classname="scripts/gen-client-catalog.spec.ts" name="client slot projection &gt; treats a list seat as additive even when shipped entries exist" time="0.000253375">
+        </testcase>
+        <testcase classname="scripts/gen-client-catalog.spec.ts" name="client slot projection &gt; names the entry whose mount makes a child seat exist" time="0.019970417">
+        </testcase>
+        <testcase classname="scripts/gen-client-catalog.spec.ts" name="client slot projection &gt; names the Factory definition that declares an ordinary child seat" time="0.000205292">
+        </testcase>
+        <testcase classname="scripts/gen-client-catalog.spec.ts" name="client slot projection &gt; reports an open keyed domain and the keys already taken" time="0.000122167">
+        </testcase>
+        <testcase classname="scripts/gen-client-catalog.spec.ts" name="client slot projection &gt; carries owner-props documentation into the entry, not just the type name" time="0.003663291">
+        </testcase>
+        <testcase classname="scripts/gen-client-catalog.spec.ts" name="client slot projection &gt; expands owner props one level and only names the shapes they reference" time="0.000558708">
+        </testcase>
+        <testcase classname="scripts/gen-client-catalog.spec.ts" name="client slot projection &gt; offers a runnable registration whose options match the cardinality" time="0.00010475">
+        </testcase>
+        <testcase classname="scripts/gen-client-catalog.spec.ts" name="client slot projection &gt; expands composed owner aliases without expanding their field value types" time="0.00156775">
+        </testcase>
+        <testcase classname="scripts/gen-client-catalog.spec.ts" name="client slot projection &gt; keeps generic owner arguments as references instead of expanding unselected fields" time="0.00036">
+        </testcase>
+        <testcase classname="scripts/gen-client-catalog.spec.ts" name="client slot projection &gt; uses an authored example when a slot interaction needs more than generic markup" time="0.000087834">
+        </testcase>
+        <testcase classname="scripts/gen-client-catalog.spec.ts" name="the per-slot report budget &gt; rejects a slot whose report a model could not finish reading" time="0.000360791">
+        </testcase>
+        <testcase classname="scripts/gen-client-catalog.spec.ts" name="the per-slot report budget &gt; passes a slot whose report stays within the budget" time="0.000251">
+        </testcase>
+        <testcase classname="scripts/gen-client-catalog.spec.ts" name="the real workspace surface &gt; collects every declared slot with a teachable contract" time="14.240030667">
+        </testcase>
+    </testsuite>
+    <testsuite name="packages/extensions/cordis-client-runner/tests/api-catalog.client.spec.ts" timestamp="2026-11-06T19:01:30.960Z" hostname="juehangs-MacBook-Air.local" tests="4" failures="0" errors="0" skipped="0" time="0.009838959">
+        <testcase classname="packages/extensions/cordis-client-runner/tests/api-catalog.client.spec.ts" name="Client Cordis inspect catalog &gt; publishes the split Workspace Controller and UI navigation services" time="0.001288166">
+        </testcase>
+        <testcase classname="packages/extensions/cordis-client-runner/tests/api-catalog.client.spec.ts" name="Client Cordis inspect catalog &gt; contains one entry per visible Client event" time="0.000165292">
+        </testcase>
+        <testcase classname="packages/extensions/cordis-client-runner/tests/api-catalog.client.spec.ts" name="Client Cordis inspect catalog &gt; describes text-only draft initialization in Workspace navigation" time="0.005253042">
+        </testcase>
+        <testcase classname="packages/extensions/cordis-client-runner/tests/api-catalog.client.spec.ts" name="Client Cordis inspect catalog &gt; includes the current referenced type closure for the Sessions service" time="0.001838791">
+        </testcase>
+    </testsuite>
+    <testsuite name="packages/experimental/client-ui-lobe-visualization/tests/agent-profile.client.spec.tsx" timestamp="2026-11-06T19:01:30.961Z" hostname="juehangs-MacBook-Air.local" tests="11" failures="0" errors="0" skipped="0" time="1.412780125">
+        <testcase classname="packages/experimental/client-ui-lobe-visualization/tests/agent-profile.client.spec.tsx" name="session agent profile &gt; reads the recorded preset and expands only its real declaration" time="0.402186">
+        </testcase>
+        <testcase classname="packages/experimental/client-ui-lobe-visualization/tests/agent-profile.client.spec.tsx" name="session agent profile &gt; falls back to the recorded id when the declaration has no name" time="0.1037065">
+        </testcase>
+        <testcase classname="packages/experimental/client-ui-lobe-visualization/tests/agent-profile.client.spec.tsx" name="session agent profile &gt; explains an absent preset without reading or offering selection (null)" time="0.021677375">
+        </testcase>
+        <testcase classname="packages/experimental/client-ui-lobe-visualization/tests/agent-profile.client.spec.tsx" name="session agent profile &gt; explains an absent preset without reading or offering selection (undefined)" time="0.049747333">
+        </testcase>
+        <testcase classname="packages/experimental/client-ui-lobe-visualization/tests/agent-profile.client.spec.tsx" name="session agent profile &gt; shows a localized failure with a retry (Error: offline)" time="0.242908708">
+        </testcase>
+        <testcase classname="packages/experimental/client-ui-lobe-visualization/tests/agent-profile.client.spec.tsx" name="session agent profile &gt; shows a localized failure with a retry (offline)" time="0.161079917">
+        </testcase>
+        <testcase classname="packages/experimental/client-ui-lobe-visualization/tests/agent-profile.client.spec.tsx" name="session agent profile &gt; ignores a late resolve after close and reopen" time="0.117832708">
+        </testcase>
+        <testcase classname="packages/experimental/client-ui-lobe-visualization/tests/agent-profile.client.spec.tsx" name="session agent profile &gt; ignores a late reject after close and reopen" time="0.092555375">
+        </testcase>
+        <testcase classname="packages/experimental/client-ui-lobe-visualization/tests/agent-profile.client.spec.tsx" name="session agent profile &gt; ignores a result after unmount" time="0.008892958">
+        </testcase>
+        <testcase classname="packages/experimental/client-ui-lobe-visualization/tests/agent-profile.client.spec.tsx" name="session agent profile &gt; does not display an earlier identity after the projection changes" time="0.023994">
+        </testcase>
+        <testcase classname="packages/experimental/client-ui-lobe-visualization/tests/agent-profile.client.spec.tsx" name="session agent profile &gt; uses the native modal Escape and outside-click dismissal" time="0.180460041">
+        </testcase>
+    </testsuite>
+    <testsuite name="packages/experimental/client-ui-lobe-visualization/tests/artifacts.client.spec.tsx" timestamp="2026-11-06T19:01:30.963Z" hostname="juehangs-MacBook-Air.local" tests="8" failures="0" errors="0" skipped="0" time="0.350178833">
+        <testcase classname="packages/experimental/client-ui-lobe-visualization/tests/artifacts.client.spec.tsx" name="recorded artifacts &gt; admits a successfully recorded /tmp/counter.html source" time="0.001701834">
+        </testcase>
+        <testcase classname="packages/experimental/client-ui-lobe-visualization/tests/artifacts.client.spec.tsx" name="recorded artifacts &gt; admits a successfully recorded /tmp/drawing.svg source" time="0.000226209">
+        </testcase>
+        <testcase classname="packages/experimental/client-ui-lobe-visualization/tests/artifacts.client.spec.tsx" name="recorded artifacts &gt; admits a successfully recorded /tmp/report.htm source" time="0.000133291">
+        </testcase>
+        <testcase classname="packages/experimental/client-ui-lobe-visualization/tests/artifacts.client.spec.tsx" name="recorded artifacts &gt; keeps failed writes, unsupported formats and malformed arguments in source mode" time="0.000272208">
+        </testcase>
+        <testcase classname="packages/experimental/client-ui-lobe-visualization/tests/artifacts.client.spec.tsx" name="recorded artifacts &gt; never runs dispatched writes before their success record" time="0.000156209">
+        </testcase>
+        <testcase classname="packages/experimental/client-ui-lobe-visualization/tests/artifacts.client.spec.tsx" name="recorded artifacts &gt; shows source first, creates an isolated preview on request and retires it on source selection" time="0.343806667">
+        </testcase>
+        <testcase classname="packages/experimental/client-ui-lobe-visualization/tests/artifacts.client.spec.tsx" name="recorded artifacts &gt; preserves failure text without presenting a runnable result" time="0.002492791">
+        </testcase>
+        <testcase classname="packages/experimental/client-ui-lobe-visualization/tests/artifacts.client.spec.tsx" name="recorded artifacts &gt; places document policy before untrusted source" time="0.000176542">
+        </testcase>
+    </testsuite>
+    <testsuite name="packages/experimental/client-ui-lobe-visualization/tests/registration.client.spec.ts" timestamp="2026-11-06T19:01:30.965Z" hostname="juehangs-MacBook-Air.local" tests="1" failures="0" errors="0" skipped="0" time="0.022192459">
+        <testcase classname="packages/experimental/client-ui-lobe-visualization/tests/registration.client.spec.ts" name="restores the native artifact view and removes the profile utility on unload" time="0.019613458">
+        </testcase>
+    </testsuite>
+    <testsuite name="packages/experimental/client-ui-lobe-visualization/tests/tools.client.spec.tsx" timestamp="2026-11-06T19:01:30.965Z" hostname="juehangs-MacBook-Air.local" tests="23" failures="0" errors="0" skipped="0" time="0.821178084">
+        <testcase classname="packages/experimental/client-ui-lobe-visualization/tests/tools.client.spec.tsx" name="tool process lifecycle &gt; shows streamed preparation and dispatched running before settlement" time="0.008270333">
+        </testcase>
+        <testcase classname="packages/experimental/client-ui-lobe-visualization/tests/tools.client.spec.tsx" name="tool process lifecycle &gt; derives hello as {}" time="0.000371958">
+        </testcase>
+        <testcase classname="packages/experimental/client-ui-lobe-visualization/tests/tools.client.spec.tsx" name="tool process lifecycle &gt; derives command failed
+[exit code: 7] as { meta: { cwd: &apos;/workspace&apos; } }" time="0.0002235">
+        </testcase>
+        <testcase classname="packages/experimental/client-ui-lobe-visualization/tests/tools.client.spec.tsx" name="tool process lifecycle &gt; derives failed
+[exit code: null] as {}" time="0.000128208">
+        </testcase>
+        <testcase classname="packages/experimental/client-ui-lobe-visualization/tests/tools.client.spec.tsx" name="tool process lifecycle &gt; derives failed
+[Command finished with exit code 3] as {}" time="0.000123375">
+        </testcase>
+        <testcase classname="packages/experimental/client-ui-lobe-visualization/tests/tools.client.spec.tsx" name="tool process lifecycle &gt; derives done
+[Command finished with exit code 0] as {}" time="0.000105541">
+        </testcase>
+        <testcase classname="packages/experimental/client-ui-lobe-visualization/tests/tools.client.spec.tsx" name="tool process lifecycle &gt; derives partial
+[Command timed out or OOM] as {}" time="0.00010075">
+        </testcase>
+        <testcase classname="packages/experimental/client-ui-lobe-visualization/tests/tools.client.spec.tsx" name="tool process lifecycle &gt; derives started background job j1 as {}" time="0.000098458">
+        </testcase>
+        <testcase classname="packages/experimental/client-ui-lobe-visualization/tests/tools.client.spec.tsx" name="tool process lifecycle &gt; derives terminated
+[killed by signal: SIGTERM] as {}" time="0.000147917">
+        </testcase>
+        <testcase classname="packages/experimental/client-ui-lobe-visualization/tests/tools.client.spec.tsx" name="tool process lifecycle &gt; derives handled timeout
+[timed out after 100ms] as {}" time="0.000137958">
+        </testcase>
+        <testcase classname="packages/experimental/client-ui-lobe-visualization/tests/tools.client.spec.tsx" name="tool process lifecycle &gt; derives terminated
+[shell killed by signal: SIGTERM] as {}" time="0.000096709">
+        </testcase>
+        <testcase classname="packages/experimental/client-ui-lobe-visualization/tests/tools.client.spec.tsx" name="tool process lifecycle &gt; derives cancelled as { isError: true, error: { name: &apos;AbortError&apos;, code: &apos;ABORTED&apos; } }" time="0.00009325">
+        </testcase>
+        <testcase classname="packages/experimental/client-ui-lobe-visualization/tests/tools.client.spec.tsx" name="tool process lifecycle &gt; derives cancelled before dispatch as { isError: true, error: { name: &apos;AbortError&apos;, code: &apos;ABORTED_BEFORE_DISPATCH&apos; } }" time="0.000072125">
+        </testcase>
+        <testcase classname="packages/experimental/client-ui-lobe-visualization/tests/tools.client.spec.tsx" name="tool process lifecycle &gt; derives partial
+[stopped: user requested] as {}" time="0.000076917">
+        </testcase>
+        <testcase classname="packages/experimental/client-ui-lobe-visualization/tests/tools.client.spec.tsx" name="tool process lifecycle &gt; derives partial write as { meta: { stopped: true } }" time="0.0001">
+        </testcase>
+        <testcase classname="packages/experimental/client-ui-lobe-visualization/tests/tools.client.spec.tsx" name="tool process lifecycle &gt; derives partial
+[still running after 100ms; moved to background job j1] as {}" time="0.000089333">
+        </testcase>
+        <testcase classname="packages/experimental/client-ui-lobe-visualization/tests/tools.client.spec.tsx" name="tool process lifecycle &gt; derives denied as { isError: true }" time="0.000073542">
+        </testcase>
+        <testcase classname="packages/experimental/client-ui-lobe-visualization/tests/tools.client.spec.tsx" name="tool process lifecycle &gt; derives status in metadata as { meta: { exitCode: 9 } }" time="0.000079">
+        </testcase>
+        <testcase classname="packages/experimental/client-ui-lobe-visualization/tests/tools.client.spec.tsx" name="tool process lifecycle &gt; keeps disclosure open while visible status progresses from preparing to running and success" time="0.409284542">
+        </testcase>
+        <testcase classname="packages/experimental/client-ui-lobe-visualization/tests/tools.client.spec.tsx" name="tool process lifecycle &gt; retains the raw command and failing result while inspect remains available collapsed" time="0.078673042">
+        </testcase>
+        <testcase classname="packages/experimental/client-ui-lobe-visualization/tests/tools.client.spec.tsx" name="tool process lifecycle &gt; shows old/new edits verbatim and opens the recorded absolute file path" time="0.025102958">
+        </testcase>
+        <testcase classname="packages/experimental/client-ui-lobe-visualization/tests/tools.client.spec.tsx" name="tool process lifecycle &gt; keeps malformed input and nontext results inspectable as plain data" time="0.015295875">
+        </testcase>
+        <testcase classname="packages/experimental/client-ui-lobe-visualization/tests/tools.client.spec.tsx" name="tool registration lifecycle &gt; waits for declarations, shadows host entries and restores them on unload" time="0.262245833">
+        </testcase>
+    </testsuite>
+</testsuites>
