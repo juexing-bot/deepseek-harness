@@ -2228,6 +2228,7 @@ export const CLIENT_SLOT_API: readonly ClientSlotEntry[] = [
     occupants: [
       'client-ui-schedule ScheduleCatalogAction id \'schedule-catalog\'',
       'experimental-client-ui-forge HeaderButton id \'forge-panel\'',
+      'client-ui-lobe-visualization AgentProfile id \'lobe-agent-profile\'',
       'experimental-liveshare LiveshareShareAction id \'liveshare-share\'',
     ],
     replaceRisk: 'none',
@@ -5439,14 +5440,14 @@ export const CLIENT_SLOT_API: readonly ClientSlotEntry[] = [
     ],
     replaceRisk: 'shadows-shipped-ui',
     example: 'return {\n  inject: [\'slots\'],\n  apply(ctx) {\n    ctx.slots.inject(\'tool.call.images\', () => ctx.slots.register(\n      { name: \'tool.call.images\' },\n      () => React.createElement(\'div\', null, \'hello\'),\n    ))\n  },\n}',
-    source: 'packages/client/ui-tool/src/client/contract/slots.ts:41',
+    source: 'packages/client/ui-tool/src/client/contract/slots.ts:39',
   },
   {
     key: 'tool.call.toolview',
     kind: 'keyed',
     scope: 'session',
-    summary: 'Keyed Tool view dispatched by wire name, including custom tools.',
-    doc: 'Keyed Tool view dispatched by wire name, including custom tools.\nRegister with `key: \'<tool name>\'`; a typo never renders.\nOccupied keys replace the view; unclaimed keys use the generic row. Owner\nphase data includes `name` and lazy `args`; preparing arguments may be incomplete.',
+    summary: 'Keyed by wire Tool name (custom tools included); misspelled keys never render; occupied keys replace the view.',
+    doc: 'Keyed by wire Tool name (custom tools included); misspelled keys never render; occupied keys replace the view.\nUnclaimed keys use the generic row. Phase data carries `name` and lazy `args`; preparing arguments may be incomplete.',
     registerOptions: [
       {
         name: 'key',
@@ -5549,6 +5550,9 @@ export const CLIENT_SLOT_API: readonly ClientSlotEntry[] = [
       'client-ui-tool WebRow key \'web_search\'',
       'client-ui-tool WebRow key \'web_fetch\'',
       'client-ui-action-cards ProposeRow key \'propose_action\'',
+      'client-ui-lobe-visualization ArtifactCard key \'write\'',
+      'client-ui-lobe-visualization ToolCard key \'bash\'',
+      'client-ui-lobe-visualization ToolCard key \'edit\'',
       'client-ui-cordis CordisDefineRow key \'cordis_define\'',
       'client-ui-cordis CordisRunRow key \'cordis_run\'',
       'client-ui-cordis CordisActionRow key \'cordis_stop\'',
@@ -5556,7 +5560,7 @@ export const CLIENT_SLOT_API: readonly ClientSlotEntry[] = [
     ],
     replaceRisk: 'shadows-shipped-ui',
     example: 'return {\n  inject: [\'slots\'],\n  apply(ctx) {\n    ctx.slots.inject(\'tool.call.toolview\', () => ctx.slots.register(\n      { name: \'tool.call.toolview\', key: \'<one key the owner dispatches>\' },\n      () => React.createElement(\'div\', null, \'hello\'),\n    ))\n  },\n}',
-    source: 'packages/client/ui-tool/src/client/contract/slots.ts:23',
+    source: 'packages/client/ui-tool/src/client/contract/slots.ts:21',
   },
   {
     key: 'tool.view.cordis',

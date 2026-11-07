@@ -1,0 +1,41 @@
+{
+  "headline": "三类可视化已通过实际应用及真实模型工具记录验证；用户当前 GUI 尚未安装。",
+  "availability": "可运行：显式安装后的隔离 Web 应用，含真实模型生成的 HTML 交互预览。待人工审核：设计或产品评审与合入。未安装：用户当前运行的 GUI。",
+  "state": "可运行，待人工评审",
+  "pr_url": "https://github.com/juexing-bot/deepseek-harness/pull/2",
+  "commands": [
+    "pnpm run build:artifacts && pnpm run build:check",
+    "pnpm exec vitest run packages/experimental/client-ui-lobe-visualization/tests",
+    "DSH_SNAPSHOT=replay pnpm exec vitest run --config vitest.web.config.ts apps/web/tests/lobe-visualization.e2e.ts",
+    "pnpm run doc-sync"
+  ],
+  "limitations": [
+    "交互产物支持单文件 HTML/HTM/SVG；不运行 React/TSX、外部依赖或相对资源。",
+    "角色页读取真实的当前预设声明，不能编辑，也不代表会话启动时的历史配置快照。",
+    "iframe 禁止宿主同源访问；自行导航后的文档不继承初始 CSP，因此不能把它作为网络隔离或数据防泄漏边界。",
+    "后台启动卡片只表示启动记录，最终结果仍需查看任务工具。",
+    "Before/After 对照来自确定性记录；另有真实模型生成的计数器与当前预设声明捕获。两者均不是已部署到当前桌面应用的证明。",
+    "预览展示当次 write 记录，不跟踪后续文件编辑。真实模型演示采用正常账号路由与 Low 设置，工具成功后主动停止冗长摘要，不作响应延迟或完整自然语言回合的承诺。",
+    "全量 GUI 回归保留超时失败记录，相关文件定向重跑通过；具体数量见统计，不宣称全套绿色。",
+    "真实模型验收中观察到默认策略下的请求重试，不是一次无重试运行；未调整重试策略。",
+    "设计或产品审核尚未完成；用户当前 GUI 未安装。"
+  ],
+  "decision": {
+    "problem": "把产物、工具过程与角色配置可视化接入 Harness。",
+    "options": ["引入 LobeHub 运行时", "使用现有 Harness 插槽独立实现交互模式"],
+    "choice": "使用现有插槽，作为显式启用的实验包交付。",
+    "evidence": "宿主已有工具卡片插槽、会话标题栏插槽和真实预设读取 API。",
+    "dissent": "未提供完整 LobeHub 格式覆盖或配置编辑；限制明确披露。",
+    "rollback": "不加载本组合包即可恢复原生工具视图和标题栏。",
+    "change_conditions": "需要配置编辑、React 运行或外部依赖时，应先确认相应接口和产品方向。",
+    "blindspots": "尚未验证真实模型生成的复杂产物、触屏平台和用户实际安装配置。"
+  },
+  "blindspot_review": [
+    {"lens":"用户","question":"是否误把源码交付说成当前应用已更新？","check":"比对源码验收实例和当前 GUI 的安装状态。","result":"当前 GUI 未安装，不宣称已更新。"},
+    {"lens":"商业","question":"是否承诺了完整 LobeHub 替代能力？","check":"核对已支持格式和配置操作。","result":"仅承诺本包支持的三个可视化域；不承诺完整替代。"},
+    {"lens":"技术","question":"停用是否留下覆盖项或错误状态？","check":"注册卸载测试和真实 Web 组合回放。","result":"测试记录提供可复验结果。"},
+    {"lens":"风险合规","question":"脚本预览是否被误当网络隔离？","check":"检查 iframe sandbox、CSP 与自导航语义。","result":"限制已披露，不作网络隔离保证。"},
+    {"lens":"数据证据","question":"是否把夹具回放说成真实模型执行？","check":"核对浏览器场景输入来源与录屏条件。","result":"确定性对照与真实模型验收已分开标明；真实模型报告要求实际文件结果、交互和读取全部成立。"},
+    {"lens":"逻辑","question":"当前预设声明能否代表历史运行配置？","check":"核对宿主读取 API 返回内容。","result":"不能，只显示当前声明并说明来源。"}
+  ]
+}

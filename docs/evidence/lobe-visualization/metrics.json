@@ -1,0 +1,65 @@
+{
+  "unit": {
+    "total": 69,
+    "passed": 69,
+    "failed": 0,
+    "skipped": 0
+  },
+  "browser": {
+    "total": 6,
+    "passed": 4,
+    "failed": 0,
+    "skipped": 2
+  },
+  "regression": {
+    "base_tests": 14,
+    "cur_tests": 14,
+    "base_fail": 0,
+    "cur_fail": 0,
+    "base_time": 0.391,
+    "cur_time": 0.4
+  },
+  "gui": {
+    "total": 13138,
+    "passed": 13133,
+    "failed": 4,
+    "skipped": 1
+  },
+  "gui_recheck": {
+    "total": 56,
+    "passed": 56,
+    "failed": 0,
+    "skipped": 0
+  },
+  "domains": 3,
+  "screenshots": 10,
+  "real_model": {
+    "verified": true,
+    "tool_calls": 3,
+    "browser_errors": 0,
+    "provider": "deepseek-account",
+    "model": "deepseek-flash",
+    "reasoning_effort": "low",
+    "stopped_after_tools": true
+  },
+  "checks": {
+    "产物构建": {
+      "state": "通过",
+      "passed": 8,
+      "failed": 0,
+      "skipped": 0
+    },
+    "使用方类型检查": {
+      "state": "通过",
+      "passed": 2,
+      "failed": 0,
+      "skipped": 0
+    },
+    "文档同步": {
+      "state": "通过",
+      "passed": 43,
+      "failed": 0,
+      "skipped": 0
+    }
+  }
+}
