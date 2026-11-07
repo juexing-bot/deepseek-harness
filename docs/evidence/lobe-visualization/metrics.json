@@ -32,7 +32,16 @@
     "skipped": 0
   },
   "domains": 3,
-  "screenshots": 8,
+  "screenshots": 10,
+  "real_model": {
+    "verified": true,
+    "tool_calls": 3,
+    "browser_errors": 0,
+    "provider": "deepseek-account",
+    "model": "deepseek-flash",
+    "reasoning_effort": "low",
+    "stopped_after_tools": true
+  },
   "checks": {
     "产物构建": {
       "state": "通过",

@@ -56,7 +56,7 @@ No change to request prefixes or caching.
 
 <a id="known-limitations-and-deferred-work"></a>
 
-- Artifacts support single-file HTML/HTM/SVG from successful write calls. React/TSX, external dependencies, relative resources and LobeHub-specific Markdown artifact tags are not executed; source remains inspectable.
+- Artifacts support single-file HTML/HTM/SVG from successful write calls. Previews show the recorded write content and do not track later file edits. React/TSX, external dependencies, relative resources and LobeHub-specific Markdown artifact tags are not executed; source remains inspectable.
 - The profile shows the preset's current declaration, not a historical snapshot of the session's effective startup configuration.
 - Configuration editing is unavailable here; the host has no stable header-plugin navigation operation for its preset editor.
 - Tool presentation covers Bash, edit and write; background launch records are not final success records.

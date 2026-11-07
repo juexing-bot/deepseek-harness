@@ -56,7 +56,7 @@ Bash/edit 卡片保留原始输入、结果和调用查看入口。进程非零�
 
 <a id="known-limitations-and-deferred-work"></a>
 
-- 产物支持成功 write 的单文件 HTML/HTM/SVG。React/TSX、外部依赖、相对资源和 LobeHub 自定义 Markdown 产物标签不会执行；源码仍可查看。
+- 产物支持成功 write 的单文件 HTML/HTM/SVG。预览显示当次写入记录，不跟踪后续文件编辑。React/TSX、外部依赖、相对资源和 LobeHub 自定义 Markdown 产物标签不会执行；源码仍可查看。
 - 角色页面展示预设当前声明，不是会话实际启动配置的历史快照。
 - 此处不支持编辑配置；宿主没有面向该标题栏插件的稳定预设编辑器导航操作。
 - 工具呈现覆盖 Bash、edit 和 write；后台启动记录不代表最终成功。
